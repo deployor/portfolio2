@@ -4,9 +4,9 @@ import { FaQuoteLeft } from 'react-icons/fa';
 export default function Testimonials() {
   const testimonials = [
     {
-      name: "BloClimb Team",
+      name: "BloClimb",
       role: "Game Development & Staff Managment",
-      text: "Deployor transformed BloClimb with custom scripts, tools, and websites, streamlining management and development both in and beyond the game!",
+      text: "Tom / Deployor has always been of great help towards me and our community, he has programmed and directed the making of multiple discord bots for our community, other public relations purposes and a moral supporter. I thank him for long time help towards me and on behalf of our community.",
       company: "BloClimb"
     }
   ];
