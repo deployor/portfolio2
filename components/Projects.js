@@ -7,7 +7,7 @@ export default function Projects() {
       description: "Mental health resources and AI chatbot",
       image: "/project1.png",
       tags: ["React", "Next.js", "TailwindCSS", "OpenAI"],
-      demoLink: "https://crisis.thiswhity.uk/",
+      demoLink: "https://crisis.deployor.dev/",
       githubLink: "https://github.com/deployor/ai-Crisis",
       featured: true
     },
@@ -16,7 +16,7 @@ export default function Projects() {
       description: "Poll app made for Hackclub with DB entierly on supabase! So u dont have the hassle of phpmyadmin and more! :)",
       image: "/project3.png",
       tags: ["React", "Next.js", "TailwindCSS", "Supabase"],
-      demoLink: "https://poll.thiswhity.uk/",
+      demoLink: "https://poll.deployor.dev/",
       githubLink: "https://github.com/deployor/poll-app/",
       featured: true
     },
@@ -34,7 +34,7 @@ export default function Projects() {
       description: "Challenge Your Emoji Smarts! 🧩",
       image: "/project2.png",
       tags: ["React", "Next.js", "TailwindCSS"],
-      demoLink: "https://emoji.thiswhity.uk/",
+      demoLink: "https://emoji.deployor.dev/",
       githubLink: "https://github.com/deployor/emoji-guess",
       featured: false
     },
