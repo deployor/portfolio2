@@ -6,8 +6,8 @@ export default function Testimonials() {
     {
       name: "BloClimb",
       role: "Game Development & Staff Managment",
-      text: "Tom / Deployor has always been of great help towards me and our community, he has programmed and directed the making of multiple discord bots for our community, other public relations purposes and a moral supporter. I thank him for long time help towards me and on behalf of our community.",
-      company: "BloClimb"
+      text: "Tom / Deplooyor has always been of great help towards me and our community, he has programmed and directed the making of multiple discord bots for our community, other public relations purposes and a moral supporter. I thank him for long time help towards me and on behalf of our community.",
+      company: "BloClimb Chairman"
     }
   ];
 
