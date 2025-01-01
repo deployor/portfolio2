@@ -13,19 +13,19 @@ export default function Hero() {
   ];
 
   return (
-    <section className="min-h-screen relative bg-gradient-to-r from-gray-900 via-purple-900 to-violet-900">
+    <section className="min-h-screen relative bg-gradient-to-r from-gray-900 via-purple-900 to-violet-900 pt-16 md:pt-20">
       <div className="absolute inset-0 bg-black opacity-50"></div>
       <div className="absolute inset-0 bg-grid-pattern"></div>
       
-      <div className="relative z-10 container mx-auto px-4 py-16 flex flex-col items-center justify-center min-h-screen">
+      <div className="relative z-10 container mx-auto px-4 flex flex-col items-center justify-center min-h-[calc(100vh-4rem)]">
           <motion.div
               initial={{scale: 0}}
               animate={{scale: 1}}
-              className="mb-8 relative"
+              className="mb-8 relative w-full max-w-md mx-auto z-20"
           >
               {/* Left Arrow */}
               <motion.div
-                  className="absolute -left-16 top-1/2 -translate-y-1/2 text-purple-400"
+                  className="hidden lg:block absolute -left-16 top-1/2 -translate-y-1/2 text-purple-400"
                   animate={{x: [0, -10, 0]}}
                   transition={{repeat: Infinity, duration: 1.5}}
               >
@@ -34,7 +34,7 @@ export default function Hero() {
 
               {/* Right Arrow */}
               <motion.div
-                  className="absolute -right-16 top-1/2 -translate-y-1/2 text-purple-400"
+                  className="hidden lg:block absolute -right-16 top-1/2 -translate-y-1/2 text-purple-400"
                   animate={{x: [0, 10, 0]}}
                   transition={{repeat: Infinity, duration: 1.5}}
               >
@@ -42,11 +42,11 @@ export default function Hero() {
               </motion.div>
 
               <Link href="/changelog"
-                    className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-4 rounded-full
-            font-bold text-xl shadow-lg hover:shadow-xl transition-all duration-300 
-            flex items-center gap-4 border-2 border-purple-400 group"
+                    className="bg-purple-600 hover:bg-purple-700 text-white px-6 md:px-8 py-3 md:py-4 rounded-full
+                    font-bold text-lg md:text-xl shadow-lg hover:shadow-xl transition-all duration-300 
+                    flex items-center justify-center gap-4 border-2 border-purple-400 group w-full relative"
               >
-                  <span className="text-2xl">🌊</span>
+                  <span className="text-xl md:text-2xl">🌊</span>
                   I'm from Highseas!
               </Link>
           </motion.div>
