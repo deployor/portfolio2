@@ -1,4 +1,5 @@
-import { motion } from 'framer-motion';
+import {motion} from 'framer-motion';
+import {FaArrowRight} from 'react-icons/fa';
 
 export default function Projects() {
   const projects = [
@@ -9,6 +10,7 @@ export default function Projects() {
       tags: ["React", "Next.js", "TailwindCSS", "OpenAI"],
       demoLink: "https://crisis.deployor.dev/",
       githubLink: "https://github.com/deployor/ai-Crisis",
+        detailsLink: "/projects/herbert",
       featured: true
     },
     {
@@ -36,6 +38,7 @@ export default function Projects() {
       tags: ["React", "Next.js", "TailwindCSS"],
       demoLink: "https://emoji.deployor.dev/",
       githubLink: "https://github.com/deployor/emoji-guess",
+        detailsLink: "/projects/emoji-guess",
       featured: false
     },
     
@@ -77,10 +80,19 @@ export default function Projects() {
                     </span>
                   ))}
                 </div>
-                
-                <div className="flex gap-4">
+
+                  <div className="flex flex-wrap items-center gap-4">
                   <a href={project.demoLink} className="btn-primary">Live Demo</a>
                   <a href={project.githubLink} className="btn-secondary">GitHub</a>
+                      {project.detailsLink && (
+                          <motion.a
+                              href={project.detailsLink}
+                              className="inline-flex items-center text-purple-400 hover:text-purple-300"
+                              whileHover={{x: 5}}
+                          >
+                              Details <FaArrowRight className="ml-2"/>
+                          </motion.a>
+                      )}
                 </div>
               </div>
             </motion.div>

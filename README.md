@@ -11,6 +11,11 @@
 
 A modern, responsive portfolio website built with Next.js, TailwindCSS, and Motion. Feel free to yoink it!
 
+### 🌊 Hey Highseas Visitors!
+
+> **Click the wavy button at the top of the site to see what's new!**  
+> I made some cool updates just for you! 👀
+
 </div>
 
 ---
@@ -99,5 +104,12 @@ Deployor - [Portfolio](https://thiswhity.uk/) 👏
 <div align="center">
 
 ### Made with love by Deployor ♥️
+
+<details>
+<summary>📝 Note for Highseas Reviewers</summary>
+
+Look for the "🌊 I'm from Highseas!" button when you visit the site!  
+It will show you all the new features I added!!!
+</details>
 
 </div>

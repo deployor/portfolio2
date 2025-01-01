@@ -1,6 +1,7 @@
-import { useEffect, useState } from 'react';
-import { motion } from 'framer-motion';
-import { FaArrowDown } from 'react-icons/fa';
+import {useState} from 'react';
+import {motion} from 'framer-motion';
+import {FaArrowLeft, FaArrowRight} from 'react-icons/fa';
+import Link from 'next/link';
 
 export default function Hero() {
   const [textIndex, setTextIndex] = useState(0);
@@ -17,7 +18,40 @@ export default function Hero() {
       <div className="absolute inset-0 bg-grid-pattern"></div>
       
       <div className="relative z-10 container mx-auto px-4 py-16 flex flex-col items-center justify-center min-h-screen">
-        <motion.img
+          <motion.div
+              initial={{scale: 0}}
+              animate={{scale: 1}}
+              className="mb-8 relative"
+          >
+              {/* Left Arrow */}
+              <motion.div
+                  className="absolute -left-16 top-1/2 -translate-y-1/2 text-purple-400"
+                  animate={{x: [0, -10, 0]}}
+                  transition={{repeat: Infinity, duration: 1.5}}
+              >
+                  <FaArrowRight className="text-2xl"/>
+              </motion.div>
+
+              {/* Right Arrow */}
+              <motion.div
+                  className="absolute -right-16 top-1/2 -translate-y-1/2 text-purple-400"
+                  animate={{x: [0, 10, 0]}}
+                  transition={{repeat: Infinity, duration: 1.5}}
+              >
+                  <FaArrowLeft className="text-2xl"/>
+              </motion.div>
+
+              <Link href="/changelog"
+                    className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-4 rounded-full
+            font-bold text-xl shadow-lg hover:shadow-xl transition-all duration-300 
+            flex items-center gap-4 border-2 border-purple-400 group"
+              >
+                  <span className="text-2xl">🌊</span>
+                  I'm from Highseas!
+              </Link>
+          </motion.div>
+
+          <motion.img
           src="https://gravatar.com/avatar/60592cf08710dae04973a1c04afdb40f?size=512"
           alt="Profile"
           className="w-40 h-40 rounded-full mb-8 border-4 border-purple-500"
