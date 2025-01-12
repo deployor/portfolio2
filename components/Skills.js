@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaPython, FaDocker, FaLinux, FaGithub } from 'react-icons/fa';
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaPython, FaDocker, FaLinux, FaGithub, FaSlack } from 'react-icons/fa';
 import { SiTypescript, SiNextdotjs, SiVite, SiSupabase, SiPrisma, SiLua } from 'react-icons/si';
+import { TbBrandOffice } from "react-icons/tb";
 
 export default function Skills() {
   const skills = [
@@ -9,6 +10,8 @@ export default function Skills() {
     { icon: <FaCss3Alt size={48} />, name: 'CSS3' },
     { icon: <FaJs size={48} />, name: 'JavaScript' },
     { icon: <SiTypescript size={48} />, name: 'TypeScript' },
+    { icon: <TbBrandOffice size={48} />, name: 'Office' },
+    { icon: <FaSlack size={48} />, name: 'Slack' },
     
     // Frameworks
     { icon: <FaReact size={48} />, name: 'React & Native' },
